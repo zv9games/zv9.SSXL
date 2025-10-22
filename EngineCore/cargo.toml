@@ -1,0 +1,9 @@
+[package]
+name = "enginecore"
+version = "0.0.1"
+edition = "2021"
+
+[dependencies]
+// All crates commented out — nothing builds
+# ssxl-grid = "0.1.0"
+# echo-form = "0.2.3"
