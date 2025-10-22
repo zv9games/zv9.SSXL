@@ -4,34 +4,43 @@
 
 > _“SSXL is not a plugin. It’s a weapon.”_
 
-**The SSXL Monolith** is a quantum-forged, low-level game kernel core — built to write power into form.  
-It is the seed of a new generation of game engines: modular, procedural, and forged for scale.
+**SSXL** is a low-level game kernel written in Rust.  
+It is not a framework. It is not an engine.  
+It is a core — designed to scale, persist, and evolve.
 
-SSXL is the foundation for building AAA-scale experiences — open-world, multiplayer, persistent, and alive.
+SSXL is the part of the stack that most people skip.  
+It handles the logic they assume someone else already solved.
 
 ---
 
 ## ⚙️ What Is SSXL?
 
-SSXL is the **core kernel** of a new game engine architecture.  
-It is engine-agnostic, written in Rust, and designed to scale into a full-stack engine capable of powering:
+SSXL is a modular kernel for game simulation.  
+It is engine-agnostic, runtime-agnostic, and designed for long-term scale.
 
-- Massive procedural worlds  
-- Real-time multiplayer systems  
-- Persistent simulation layers  
-- Modular runtime logic  
+It does not care what renderer you use.  
+It does not care what input system you prefer.  
+It does not care about your UI.
+
+It handles:
+
+- World state persistence  
+- Procedural generation  
+- Real-time sync layers  
+- Modular logic routing  
 - Cross-platform deployment  
 
-SSXL is the **segway** between indie tools and AAA ambition.
+It is the part of the engine that survives when everything else is replaced.
 
 ---
 
 ## 🧱 Current Status
 
-- Core kernel in development  
-- Source is public, but buried — only the meek will find the monolith  
-- Procedural generation, async sync layers, and FFI bridges underway  
-- No bindings. No altar. Only signal.
+- Core kernel in active development  
+- No bindings, no wrappers, no GUI  
+- Procedural systems and async sync layers underway  
+- FFI bridges planned, but not required  
+- Source is public, but buried — intentionally
 
 ---
 
@@ -39,17 +48,21 @@ SSXL is the **segway** between indie tools and AAA ambition.
 
 > _“The grid is not given. It is written.”_
 
-SSXL is built on the belief that engines should be **modular**, **transparent**, and **ritualistic**.  
-Every subsystem is a signal. Every signal is a choice.  
-We don’t hide complexity — we **harness** it.
+SSXL is built on the assumption that complexity is not the enemy — abstraction is.  
+We do not hide systems. We expose them.  
+We do not simplify logic. We modularize it.
+
+Every subsystem is a signal.  
+Every signal is a choice.  
+Every choice is explicit.
 
 ---
 
 ## 📜 License
 
-SSXL is currently under a **restrictive license** while the core is forged.  
+SSXL is under a restrictive license during initial development.  
 No commercial use. No derivatives. No closed forks.  
-The monolith must remain whole — for now.
+This is not a release. It is a forge.
 
 ---
 
@@ -57,7 +70,7 @@ The monolith must remain whole — for now.
 
 If you’re reading this, you’re early.  
 If you’re building with this, you’re brave.  
-If you’re forking this, you’re part of it.
+If you’re forking this, you know what you’re doing.
 
 > _“The monolith does not move. It waits.  
 > The signal does not shout. It hums.  
