@@ -2,7 +2,6 @@
 
 ![SSXL Monolith Poster](./.assets/zv9_SSXL.jpg)
 
-
 /*
 ================================================================================
 SSXL MONOLITH — THESIS & ROADMAP
@@ -20,7 +19,6 @@ orchestration of persistent worlds, procedural systems, and real-time synchroniz
 environments. It is the part of the stack that survives refactors, reboots, and revolutions — the kernel
 beneath the myth.
 
-/*
 ================================================================================
 SSXL MONOLITH — TIERED DEVELOPMENT PLAN
 ================================================================================
@@ -81,10 +79,10 @@ TIER 4 — THE MASK: RENDERER INTEGRATION
 ---------------------------------------
 Goal: Visualize the simulation.
 
-- FFI bridge to external engine (Godot, Bevy, etc.)
-- Minimal render hooks
+- Minimal render layer (wgpu, miniquad, or custom)
 - Input abstraction layer
 - Scene composition interface
+- No external engine dependencies
 
 Outcome: A playable scene with visual feedback.
 
@@ -107,7 +105,7 @@ TIER 6 — THE FORGE: GUI EDITOR & CREATION TOOLS
 -----------------------------------------------
 Goal: Build a full-stack game creation environment.
 
-- GUI editor (egui, Tauri, or web-based)
+- GUI editor (egui-based, Rust-native)
 - Scene composer (drag/drop entities)
 - Grid + entity inspector
 - Runtime logic editor
@@ -130,13 +128,29 @@ Goal: Showcase SSXL’s full-stack capabilities.
 Outcome: SSXL enters the world — playable, inspectable, forkable.
 
 ================================================================================
-ITERATION STRATEGY
+TODO CHECKLIST
 ================================================================================
-- Each tier is modular and self-contained
-- CLI-first → GUI later
-- Signal-driven architecture
-- Myth-backed naming and structure
-- Build → test → refactor → document → evolve
+
+[ ] signal.rs         → Define Signal enum + dispatch trait  
+[ ] state.rs          → WorldState struct + persistence logic  
+[ ] kernel.rs         → Core loop + signal routing  
+[ ] main.rs           → CLI harness for simulation boot  
+[ ] grid.rs           → Chunked terrain + spatial partitioning  
+[ ] gen.rs            → Procedural generation algorithms  
+[ ] sync.rs           → Async signal propagation + rollback  
+[ ] net.rs            → Basic networking layer (optional)  
+[ ] entity.rs         → Entity struct + signal hooks  
+[ ] logic.rs          → Modular behavior containers  
+[ ] runtime.rs        → Hot-reloadable logic modules  
+[ ] render.rs         → Minimal render layer (wgpu or custom)  
+[ ] input.rs          → Input abstraction layer  
+[ ] scene.rs          → Scene composition interface  
+[ ] signalviz.rs      → CLI signal visualizer  
+[ ] debug.rs          → Debug console + timeline playback  
+[ ] editor.rs         → GUI editor scaffold (egui)  
+[ ] docs/kernel.md    → Architecture spec  
+[ ] docs/signal.md    → Signal map + lore  
+[ ] showcase/         → First playable demo + lore console  
 
 ================================================================================
 */
